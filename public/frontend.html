@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Mini Projects</title>
+  <style>
+    .ideal-button {
+      background: linear-gradient(135deg, #2669a0, #0072ff);
+      color: white;
+      padding: 14px 32px;
+      font-size: 16px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 114, 255, 0.3);
+      transition: all 0.3s ease;
+      letter-spacing: 1px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #70c45f;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .project {
+      background: rgb(168, 185, 97);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 500px;
+    }
+
+    .project:not(:last-child) {
+      border-bottom: 3px solid #f5f5f5;
+    }
+
+    /* Button style */
+    .btn {
+      background: linear-gradient(135deg, #107f9e, #0072ff);
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 114, 255, 0.3);
+    }
+
+    /* Toggle project */
+    .dark-mode {
+      background-color: #021404;
+      color: #fff;
+    }
+
+    /* Newsletter project */
+    .newsletter {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .newsletter input[type="email"] {
+      flex: 1;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    /* Character counter project */
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    .counter {
+      text-align: right;
+      margin-top: 6px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+    <h1></h1>
+    <a href="./index.html"class="ideal-button">BACK TO</a>
+    
+    <!-- <a href="#" onclick="showPage('frontend')">Frontend Developer</a> -->
+
+  <h1>Frontend Mini Projects</h1>
+
+  <!-- 1. Light/Dark Mode Toggle -->
+  <div class="project">
+    <h2>🌗 Light / Dark Mode</h2>
+    <p>Click the button below to toggle dark mode for the page.</p>
+    <br>
+    <button class="btn" onclick="toggleDarkMode()">Toggle Mode</button>
+  </div>
+
+  <!-- 2. Newsletter Form -->
+  <div class="project">
+    <h2>📨 Newsletter Signup</h2>
+    <p>Enter your email to subscribe to our awesome newsletter.</p>
+    <div class="newsletter">
+      <input type="email" id="emailInput" placeholder="Enter your email" />
+      <button class="btn" onclick="subscribe()">Subscribe</button>
+    </div>
+    <p id="subscribeMessage" style="margin-top:10px; color:green;"></p>
+  </div>
+
+  <!-- 3. Character Counter -->
+  <div class="project">
+    <h2>✍️ Character Counter</h2>
+    <p>Type in the textarea below. Max 100 characters.</p>
+    <textarea id="textArea" maxlength="100" oninput="updateCounter()"></textarea>
+    <div class="counter"><span id="charCount">100</span> characters left</div>
+  </div>
+
+  <script>
+    // 1. Toggle Dark Mode
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    // 2. Newsletter Subscribe
+    function subscribe() {
+      const email = document.getElementById('emailInput').value;
+      const message = document.getElementById('subscribeMessage');
+      if (email.includes('@') && email.includes('.')) {
+        message.textContent = "✅ Subscribed successfully!";
+        message.style.color = "green";
+      } else {
+        message.textContent = "❌ Please enter a valid email.";
+        message.style.color = "red";
+      }
+    }
+
+    // 3. Character Counter
+    function updateCounter() {
+      const max = 100;
+      const current = document.getElementById('textArea').value.length;
+      document.getElementById('charCount').textContent = max - current;
+    }
+  </script>
+
+</body>
+</html>

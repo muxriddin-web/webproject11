@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web project</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- SINGLE NAVIGATION HEADER -->
+    <header>
+        <div class="container">
+            <nav class="glass">
+                <div class="logo" onclick="showPage('home')">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                             <!-- Rasm qo'shish -->
+                            <image href="./images/removebg.png" x="0" y="0" width="48" height="48" />
+                        
+                            <!-- Small accent dots -->
+                            <circle cx="24" cy="8" r="1" opacity="1"/>
+                            <circle cx="8" cy="24" r="1" opacity="0.9"/>
+                            <circle cx="40" cy="24" r="1" opacity="0.9"/>
+                            <!-- Tiny corner dots -->
+                            <circle cx="8" cy="8" r="3" opacity="0.6"/>
+                            <circle cx="40" cy="8" r="3" opacity="0.6"/>
+                            <circle cx="8" cy="40" r="3" opacity="0.6"/>
+                            <circle cx="40" cy="40" r="3" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <span>IT_cent</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" onclick="showPage('home')" class="active">Home</a>
+                    <a href="#" onclick="showPage('about')">About</a>
+                    <a href="#" onclick="showPage('services')">Services</a>
+                    <a href="#" onclick="showPage('contact')">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <div class="hero-image">
+                        <img src="./images/public-comfort-belyy-_-zheltyy-ekran-_-2.jpg" alt="Modern Technology Interaction" />
+                    </div>
+                    <div class="hero-content">
+                        <h1>Kelajakka xush kelibsiz</h1>
+                        <p>Biz dizayn va funksionallik uyg‘unligiga asoslangan echimlar orqali texnologiyani yanada yaqinroq qilamiz.</p>
+                        <a href="#" class="cta-button" onclick="showPage('about')">Batafsil</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2>Bizning Vizyonimiz Haqida</h2>
+                        <p>IT Park raqamli innovatsiyalar markazi sifatida, inson uchun qulay, estetik va funksional texnologiyalarni yaratishga intiladi.</p>
+                        <p>Biz har bir loyiha orqali shakl va mazmunni uyg‘unlashtirgan, chuqur o‘ylangan dizayn va ilg‘or texnologiyalar asosidagi yechimlar taqdim etamiz.</p>
+                        <p>Maqsadimiz — O‘zbekistonni global IT xaritasida porlatish va yangi avlod raqamli imkoniyatlarini ochishdir.</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-card glass">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Guruhlar Yakunlandi</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Baxtli Mijozlar</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Yillar Tajribasi</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Qo'llab-Quvvatlash Mavjud</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="team-section">
+                    <h2>Jamoamiz Bilan Tanishing</h2>
+                        <div class="team-member1 glass">
+                            <div class="team-avatar">👨‍💻</div>
+                            <h3>ISLOM INOG'OMOV Professional Teacher</h3>
+                            <p class="role">CEO & Founder</p>
+                            <p class="bio">Visionary leader with 15+ years in digital innovation, driving our mission to create exceptional user experiences.</p>
+                            <div class="team-social">
+                                <a href="#" title="Email">📧</a>
+                                <a href="#" title="LinkedIn">💼</a>
+                                <a href="#" title="Twitter">🐦</a>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div id="services" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1>Bizning Xizmatlar</h1>
+                    <p>Zamonaviy texnologiyalar bo‘yicha amaliy ta’lim — IT sohasidagi ilk qadamlaringiz biz bilan boshlanadi.</p>
+                </section>
+
+                <section class="services-grid">
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">💻</div>
+                        <h3>Web Developer</h3>
+                        <h3> / </h3>
+                        <a href="./frontend.html"><h3>Frontend Developer</h3></a>
+                            </div>
+                            <p>Build fast, secure, and scalable websites using the latest web technologies and best practices.</p>
+                            <ul class="service-features">📱
+                                <li>Frontend Development</li>
+                                <li>Performance Optimization</li>
+                                <li>SEO Implementation</li>
+                                    <li>HTML, CSS, JavaScript – interaktiv saytlar yaratish</li>
+                                    <li>React, Vue, SASS, Material UI, Tailwind CSS – zamonaviy UI yaratish</li>
+                                    <li>API, GitHub, Docker, CI/CD – haqiqiy loyihalarda foydalanish</li>
+                                    <li>ChatGPT, AI bilan dasturlash – kelajak texnologiyalari!</li>
+                                
+                                <li>Amaliy loyihalar tayyorlab, portfolio tuzasiz!</li>
+                                <br>
+                                <hr>
+                                <br>
+                                <li> Ro‘yxatdan o‘tish uchun: 👉 @Inogomov</li>
+                                <li> Savollar uchun: 📞 +99899-818-78-49</li>
+                                <li>📍 Manzil: Parkent tumani "Uztelecom" binosi</li>
+                            </ul>
+                    </div>
+                        <div class="service-card glass">
+                            <div class="service-header">
+                                <div class="service-icon">💻</div>
+                            <h3>Web Developer</h3>
+                            <h3> / </h3>
+                            <h3>Backend Developer</h3>
+                            </div>
+                            <p>Build fast, secure, and scalable websites using the latest web technologies and best practices.</p>
+                            <ul class="service-features">📱
+                                <li>Backend Integration</li>
+                                <li>Performance Optimization</li>
+                                <li>SEO Implementation</li>
+                                    <li>Node.js, Express, Next.js – kuchli backend dasturlash</li>
+                                    <li>MongoDB, MySQL, Firebase – ma’lumotlar bazasi bilan ishlash</li>
+                                    <li>API, GitHub, Docker, CI/CD – haqiqiy loyihalarda foydalanish</li>
+                                    <li>ChatGPT, AI bilan dasturlash – kelajak texnologiyalari!</li>
+                                
+                                <li>Amaliy loyihalar tayyorlab, portfolio tuzasiz!</li>
+                                <br>
+                                <hr>
+                                <br>
+                                <li> Ro‘yxatdan o‘tish uchun: 👉 @Inogomov</li>
+                                <li> Savollar uchun: 📞 +99899-818-78-49</li>
+                                <li>📍 Manzil: Parkent tumani "Uztelecom" binosi</li>
+                            </ul>
+                        </div>
+
+                        <div class="team-member glass">
+                            <div class="team-avatar">👨‍💻</div>
+                            <h3>ISLOM INOG'OMOV Professional Teacher</h3>
+                            <p class="role">Creative Director</p>
+                            <p class="bio">Visionary leader with 15+ years in digital innovation, driving our mission to create exceptional user experiences.</p>
+                            <div class="team-social">
+                                <a href="#" title="Email">📧</a>
+                                <a href="#" title="LinkedIn">💼</a>
+                                <a href="#" title="Portfolio">🎨</a>
+                            </div>
+                            <!-- <h1> </h1> -->
+                            <h1>🡇</h1>
+                        </div> 
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- frontend page -->
+ 
+    
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="contact-grid">
+             <div class="contact-form glass">
+            <h2>Get In Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                </div>
+                <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <p id="responseMessage" style="margin-top: 15px;"></p>
+            </div>
+                    <div class="contact-info glass">
+                        <h2 >Contact Information</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <p>@Inogomov</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div class="contact-item-text">
+                                <h4>Phone</h4>
+                                <p>+99899-818-78-49</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div class="contact-item-text">
+                                <h4>Address</h4>
+                                <p>Parkent tumani "Uztelecom" binosi</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🕒</div>
+                            <div class="contact-item-text">
+                                <h4>Ish Soatlari</h4>
+                                <p>Du-Ju: 9AM-6PM<br>Shan: 10AM-4PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-map-section">
+                    <div class="contact-map glass">
+                        <h2>Find Us</h2>
+                        <div class="map-container">
+                            <div class="map-placeholder">
+                                <div class="map-placeholder-icon">        
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1498.840101457933!2d69.6816139!3d41.294064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38afabb5dfc207b3%3A0x9d0543b36ee95c2d!2sParkent%20Uztelecom!5e0!3m2!1sru!2s!4v1759484389993!5m2!1sru!2s" width="1100" height="550" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<div id="footer">
+  <div class="container">
+    <footer class="glass">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#" onclick="showPage('about')">About Us</a>
+          <a href="#" onclick="showPage('about')">Privacy Policy</a>
+          <a href="#" onclick="showPage('about')">Terms of Service</a>
+          <a href="#" onclick="showPage('contact')">XML Sitemap</a>
+          <a href="#" onclick="showPage('contact')">Contact</a>
+        </div>
+        <div class="copyright">
+          &copy; 2025 Glossy Touch. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
